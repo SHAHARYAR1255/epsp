@@ -106,6 +106,7 @@ class DemoNavbar extends React.Component {
                   </NavItem> */}
                   <NavItem>
                     <NavLink href="/about">About</NavLink>
+                    <NavLink href="/test">Test</NavLink>
                   </NavItem>
                   <NavItem className="d-none d-lg-block ml-lg-4">
                     <Button
