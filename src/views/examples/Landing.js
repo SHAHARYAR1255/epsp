@@ -291,7 +291,7 @@ class Landing extends React.Component {
                       block
                       className="btn-white"
                       color="default"
-                      href="/test"
+                      href="/about"
                       size="lg"
                     >
                       About Us
