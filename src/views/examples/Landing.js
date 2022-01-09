@@ -1,5 +1,5 @@
 import React from "react";
-import { db } from "../../Firebase/firebase";
+// import { db } from "../../Firebase/firebase";
 
 // nodejs library that concatenates classes
 // import classnames from "classnames";
@@ -21,28 +21,28 @@ class Landing extends React.Component {
     this.state = {
       items: [],
     };
-    this.fetchStore = this.fetchStore.bind(this);
+    // this.fetchStore = this.fetchStore.bind(this);
   }
 
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
     this.refs.main.scrollTop = 0;
-    this.fetchStore();
+    // this.fetchStore();
   }
-  async fetchStore() {
-    try {
-      const store = await db.collection("landing").get();
-      const mal = [];
-      if (!store.empty) {
-        store.forEach((doc) => {
-          mal.push(doc.data());
-          return;
-        });
-        this.setState({ items: mal });
-      }
-    } catch { }
-  }
+  // async fetchStore() {
+  //   try {
+  //     const store = await db.collection("landing").get();
+  //     const mal = [];
+  //     if (!store.empty) {
+  //       store.forEach((doc) => {
+  //         mal.push(doc.data());
+  //         return;
+  //       });
+  //       this.setState({ items: mal });
+  //     }
+  //   } catch { }
+  // }
   render() {
     return (
       <>
