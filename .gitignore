@@ -1,0 +1,10 @@
+
+
+/build
+/node_modules
+package-lock.json
+LICENSE
+CHANGELOG.md
+ISSUE_TEMPLATE.md
+/src/constants
+.env
