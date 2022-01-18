@@ -58,6 +58,10 @@ class Contactus extends React.Component {
       this.setState({ message: "check the feilds and put correct values" });
       return;
     }
+     if (IMagA === 0 || IMagB === 0 || IMagC === 0) {
+      this.setState({ message: "check the feilds and put correct values" });
+      return;
+    }
     console.log(this.state);
     console.log("type", typeof (IMagA));
     const Real_Ia = IMagA * Math.cos(IAngA * 0.01745329252);
